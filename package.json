@@ -56,7 +56,8 @@
     "build": "run-s clean && run-p build:*",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
-    "clean": "rimraf lib"
+    "clean": "rimraf lib",
+    "postinstall": "yarn build"
   },
   "devDependencies": {
     "@types/mongodb": "^3.6.11",
